@@ -37,3 +37,22 @@ function smallerText(){
         txt.style.fontSize = (currentSize - 1) + "px";
     }
 }
+
+// text input box should turn the background color of the website to a specific color.  blue, green, red, orange, yellow will be the colors.
+document.querySelector('.button3').addEventListener("click", changeColors)
+
+function changeColors(){
+    let colorValue = document.querySelector("#randomColor").value
+    if(colorValue == "blue"){
+        document.querySelector("body").style.backgroundColor = "blue"
+    } else if (colorValue == "red"){
+        document.querySelector("body").style.backgroundColor = "red"
+    } else if (colorValue == "yellow"){
+        document.querySelector("body").style.backgroundColor = "yellow"
+    } else if (colorValue == "green"){
+        document.querySelector("body").style.backgroundColor = "green"
+    } else if (colorValue == "orange"){
+        document.querySelector("body").style.backgroundColor = "orange"
+    }
+    console.log(colorValue)
+}
